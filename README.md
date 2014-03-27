@@ -1,7 +1,7 @@
 unmeater bookmarklet
 ====================
 
-Removes the beef of a web page, that is, all images and text.
+A bookmarklet for removing text and images on a web page
 
 Copy-paste bookmarklet from here:
 
