@@ -1,7 +1,7 @@
 unmeater bookmarklet
 ====================
 
-A bookmarklet for removing text and images on a web page
+A bookmarklet for removing text and images on a web page — only the borders and backgrounds will be left!
 
 To install the bookmarklet go to:
 http://jaukia.github.io/unmeater/
