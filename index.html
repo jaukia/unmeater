@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Unmeater - A bookmarklet for removing text and images on a web page</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                padding:10%;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            h1 {
+                font-weight: 300;
+            }
+            
+            a:color {
+                border-color:#0033ee;
+            }
+            
+            .btn {
+                display:inline-block;
+                padding:20px;
+                border:1px solid #ccc;
+                text-decoration:none;
+                color:#333;
+                background-color: #eee;
+                border-radius:2px;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            
+            .btn:hover {
+                border-color:#0033ee;
+                color:#0033ee;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>unmeater bookmarklet</h1>
+        
+        <p>A bookmarklet for removing text and images on a web page.</p>
+        
+        <p>Drag this link to your browser toolbar:</p>
+    
+        <p>
+            <a class="btn" href="javascript:(function(){function e(t){var n,r='unmeater',i='* { background-image: none !important; } img, input[type=image], object[type^=image] { visibility: hidden !important; }',s='* { color:transparent!important;text-shadow:none!important;-webkit-text-fill-color:transparent!important; }',o=['frame','iframe'],u=i+' '+s,a,f,l;n=t.getElementById(r);if(n){n.parentNode.removeChild(n)}else{n=t.createElement('style');n.type='text/css';n.id=r;if(n.styleSheet){n.styleSheet.cssText=u}else{n.appendChild(t.createTextNode(u))}t.getElementsByTagName('head')[0].appendChild(n)}for(f=0;f<o.length;f+=1){for(l=0,a=t.getElementsByTagName(o[f]);l<a.length;l+=1){e(a[l].contentDocument)}}}e(document)})();">Unmeater</a>
+        </p>
+        
+        <p>Alternative bookmarklet which hides the iframes as well:</p>
+        
+        <p>
+            <a class="btn" href="javascript:(function(){function e(t){var n,r='unmeater',i='* { background-image: none !important; } img, iframe, input[type=image], object[type^=image] { visibility: hidden !important; }',s='* { color:transparent!important;text-shadow:none!important;-webkit-text-fill-color:transparent!important; }',o=['frame','iframe'],u=i+' '+s,a,f,l;n=t.getElementById(r);if(n){n.parentNode.removeChild(n)}else{n=t.createElement('style');n.type='text/css';n.id=r;if(n.styleSheet){n.styleSheet.cssText=u}else{n.appendChild(t.createTextNode(u))}t.getElementsByTagName('head')[0].appendChild(n)}for(f=0;f<o.length;f+=1){for(l=0,a=t.getElementsByTagName(o[f]);l<a.length;l+=1){e(a[l].contentDocument)}}}e(document)})();">Unmeater (no iframes)</a>
+        </p>
+        
+        <p>
+            Source code and details at <a href="https://github.com/jaukia/unmeater">https://github.com/jaukia/unmeater</a>
+        </p>
+        
+    </body>
+</html>
