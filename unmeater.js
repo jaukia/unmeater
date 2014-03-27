@@ -1,7 +1,7 @@
 (function () {
     function toggleImagesAndText(root) {
         var stylesheet, stylesheetId = 'unmeater',
-            imageRules = '* { background-image: none !important; } img, input[type=image], object[type^=image] { visibility: hidden !important; }',
+            imageRules = '* { background-image: none !important; } img, input[type=image], object { visibility: hidden !important; }',
             textRules = '* { color:transparent!important;text-shadow:none!important;-webkit-text-fill-color:transparent!important; }',
             tagNames = ['frame', 'iframe'],
             rules = imageRules+" "+textRules,
